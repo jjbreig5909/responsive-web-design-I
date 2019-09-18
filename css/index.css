@@ -221,17 +221,6 @@ address h4{
 	margin-top: 20px;
 }
 
-@media screen and (max-width: 900px) {
-
-	.all-services{
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		margin-top: 20px;
-
-	}
-}
-
 .all-services .info-card{
 	display: flex;
 	flex-direction: column;
@@ -272,3 +261,83 @@ margin-right: 50px;
 	margin: 15px 0px;
 }
 
+@media (max-width: 800px) {
+
+    .logo{
+        border: 1px solid red;
+    }
+
+    .navbar{
+        flex-flow: column-reverse;
+        flex-wrap: wrap;
+        justify-content: center;
+        border: 1px solid red;
+        width: 100vw;
+    }
+
+    .top-images{
+        justify-content: center;
+        width: 100vw;
+        border: 1px solid blue;
+        padding-left: 0px;
+    }
+
+    .top-images img{
+        display: none;
+    }
+
+    .page-title{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    .middle-content{
+        width: 100vw;
+        border: solid 1px blue;
+        justify-content: space-between;
+    }
+
+    .middle-content .info-card{
+        margin: 0px 30px;
+    }
+
+    .bottom-content{
+        width: 100vw;
+        justify-content: space-between;
+    }
+    .bottom-content .info-card{
+        margin: 0px 30px;
+    }
+
+    .middle-img{
+        width: 100vw;
+    }
+
+    address{
+        margin-left: 30px;
+    }
+
+    
+
+}
+
+@media (max-width: 500px) {
+    
+    .navbar{
+        flex-flow: column-reverse;
+        flex-wrap: wrap;
+        justify-content: center;
+        border: 1px solid red;
+        width: 100vw;
+    }
+
+    .navbar nav{
+        flex-flow: column;
+        
+    }
+
+    .navbar nav a{
+        font-size: 18px;
+    }
+}
