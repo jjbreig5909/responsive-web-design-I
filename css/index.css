@@ -92,43 +92,6 @@ body nav a{
 }
 
 /* Animation Stretch Goal */
-body nav a:before{
-	position: absolute;
-	bottom: -3px;
-	right: 0px;
-    width: 100%;
-    height: 2px;
-    background: lightgray;
-    content: "";
-    opacity: 1;
-    transition: all 0.3s;
-}
-
-body nav a:after{
-	position: absolute;
-	top:18px;
-	left: 0px;
-    width: 0px;
-    background: lightgray;
-    content: "";
-    opacity: 0;
-    transition: all 0.3s;
-}
-
-body nav a:hover{
-	color: #333333;
-}
-
-body nav a:hover:before, body nav a:hover:after{
-	opacity: 1;
-	width: 100%;
-	height: 2px;
-	background: dodgerblue
-}
-
-body nav a:hover:after{
-	transform: translateY(-20px);
-}
 
 .learn:hover, .page-title h2:hover{
 	background-color: dodgerblue;
@@ -264,21 +227,18 @@ margin-right: 50px;
 @media (max-width: 800px) {
 
     .logo{
-        border: 1px solid red;
     }
 
     .navbar{
         flex-flow: column-reverse;
         flex-wrap: wrap;
         justify-content: center;
-        border: 1px solid red;
         width: 100vw;
     }
 
     .top-images{
         justify-content: center;
         width: 100vw;
-        border: 1px solid blue;
         padding-left: 0px;
     }
 
@@ -294,7 +254,6 @@ margin-right: 50px;
 
     .middle-content{
         width: 100vw;
-        border: solid 1px blue;
         justify-content: space-between;
     }
 
@@ -327,17 +286,50 @@ margin-right: 50px;
     .navbar{
         flex-flow: column-reverse;
         flex-wrap: wrap;
-        justify-content: center;
-        border: 1px solid red;
+        align-content: center;
         width: 100vw;
+        height: max-content;
     }
 
     .navbar nav{
         flex-flow: column;
-        
+        height: max-content;
+    }
+
+    .logo{
+        border-bottom: 1px solid gray;
+        padding: 0px 100vw;
+        padding-bottom: 10px;
     }
 
     .navbar nav a{
-        font-size: 18px;
+        font-size: 24px;
+        font-weight: bold;
+        border-bottom: gray solid 1px;
+        width: 100vw;
+        text-align: center;
+        padding: 10px 0px;
     }
+
+    .middle-content{
+        flex-flow: column;
+    }
+
+    .middle-content .info-card{
+        margin: 20px 0px;
+    }
+
+    .bottom-content{
+        flex-flow: column;
+    }
+
+    .bottom-content .info-card{
+        margin: 20px 0px;
+    }
+
+    address{
+        margin-left: 0px;
+    }
+
+
 }
